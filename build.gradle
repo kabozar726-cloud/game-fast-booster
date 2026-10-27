@@ -1,0 +1,6 @@
+// Top-level build file for Game Fast Booster (real Android VPN + Booster app).
+// Open this folder in Android Studio (Hedgehog or newer) and let Gradle sync.
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+}
