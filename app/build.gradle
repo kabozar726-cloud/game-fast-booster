@@ -58,10 +58,9 @@ dependencies {
     implementation("androidx.compose.foundation:foundation")
 
     // WireGuard tunnel backend (official wireguard-android library).
-    // If Gradle cannot resolve this exact version, open
-    // https://github.com/WireGuard/wireguard-android and sync the
-    // latest published tunnel artifact, or add the library as a module.
-    implementation("com.wireguard.android:tunnel:1.0.20230704")
+    // Version 1.0.20230704 is not published to Google Maven / Maven
+    // Central, so resolve the latest published 1.x release instead.
+    implementation("com.wireguard.android:tunnel:1.+")
 
     // Google Play Billing for the Rs 200/month Pro subscription.
     // Product id to create in Play Console: "gamefast_pro_monthly".
